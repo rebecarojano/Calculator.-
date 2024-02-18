@@ -1,0 +1,66 @@
+body {
+    min-height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+.calculadora {
+    background-color: black;
+    color: white;
+    width: 240px;
+    max-width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5em;
+}
+
+#resultado {
+    grid-column: 1/-1;
+    background-color: black;
+    padding: 1.5rem;
+    font-size: 3rem;
+    font-weight: 1;
+    text-align: right;
+    margin-bottom: 1rem;
+    font-family: Helvetica;
+}
+
+button {
+    border: 0;
+    height: 60px;
+    width: 60px;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    font-family: helvetica;
+    cursor: pointer;
+}
+
+#zero_text {
+    margin-left: -60px;
+}
+
+#cero {
+    width: 120px;
+    border-radius: 60px;
+    grid-column: span 2;
+}
+
+#division, #multiplicacion, #resta, #suma, #igual {
+background-color: #FFA100;
+color: white;
+}
+
+#porcentaje, #borrar, #C {
+    background-color: #A6A6A6;
+}
+
+#uno, #dos, #tres, #cuatro, #cinco, #seis, #siete, #ocho, #nueve, #cero, #punto {
+    background-color: #3C3B3A;
+    color: white;
+}
